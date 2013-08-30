@@ -21,13 +21,13 @@ int main( int argc, char* args[] )
         render.event();
         render.draw();
         
-        if((render.checkNow)&&(i == 10))
+        if((render.checkNow)&&(i == render.speed))
         {
             render.check();
         }
         
         i++;
-        if(i == 11) i = 0;
+        if(i > render.speed) i = 0;
     }
     
     

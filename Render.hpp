@@ -41,19 +41,25 @@ public:
     SDL_Rect mousePos;
     SDL_Rect tileDraw;
     
+    int speed;
+    
 private:
     SDL_Surface *Surf_Display;
     SDL_Surface *bg;
     //SDL_Surface *dead = NULL;
     SDL_Surface *aliveTile;
     SDL_Surface *Pause;
+    SDL_Surface *speedBar;
     
     SDL_Rect PausePos;
+    SDL_Rect speedRect;
     
     SDL_Event events;
     
     tile tiles[XMAX][YMAX];
     bool turnTile[XMAX][YMAX];
+    
+    
     
 };
 
