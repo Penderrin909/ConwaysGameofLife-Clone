@@ -1,0 +1,21 @@
+Conways Game of Life (by Justin)
+=======================================
+Controls:
+
+p - Puases the simulation
+delete - clears the whole board
+q or esc - exits the program
+left mouse button - makes a live cell
+right mouse button - kills a live cell
+=======================================
+
+=====================================================
+Compile:
+
+make
+
+
+(the command is simply for reference)
+g++  -o ConwaysGameofLife SDLText.cpp `sdl-config --cflags --libs`
+(with g++)
+=====================================================
